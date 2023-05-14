@@ -42,8 +42,6 @@ Install my-project with npm
 
 ## How to use
 
-use the scripts in package.json
-
 ```bash
  npm run start
  ````
