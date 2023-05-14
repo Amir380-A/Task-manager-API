@@ -2,32 +2,28 @@
 
 ## Description
 
-This is a backend API for managing tasks. It makes CRUD operations for users to manage their tasks
+This is a backend API for managing tasks. It provides CRUD operations for users to manage their tasks
 
 ## Features 
 
-A User can:
+A User should be able to:
 
 - Signup with name ,email and password.
-  - After signing up ,the user 'll get a welcome email notification by NodeMailer.
-- Create tasks
+  - The user should get a welcome email notification by NodeMailer.
 - Login with email and password.
+- Create tasks.
 - Logout.
-- Filter your tasks and mark them as complete ones or just the incomplete ones.
--  Filter your tasks based on specifi order or by ascending or descending order.
+- Filter your tasks and mark them as complete ones or incomplete ones.
+-  Filter your tasks based on specific order or by ascending or descending order.
 -  pagination for the tasks
 - Get, Update and Delete a specific task by id.
-- Get a Hash encryption of passwords and access management with JWT tokens.
-- Get Restricted from accessing to CRUD operations based on JWT tokens.
-- Get all account/profile information.
+- Get a Hash encryption of passwords with JWT tokens.
+- Get bearer tokens and authntication with JWT tokens.
+- Get all account information.
 - Update your account.
 - Delete your account.
-  - The user will get a cancelation email notification.
-- Upload/upate a profile picture.
-- Delete your profile picture.
+  - The user should get a cancellation email notification.
 
-
-Install my-project with npm
 
 
 ## How to use
