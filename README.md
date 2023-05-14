@@ -8,31 +8,29 @@ This is a backend API for managing tasks. It makes CRUD operations for users to 
 
 A User can:
 
-- Signup with (name ,email and password).
-  - After signing up ,the user 'll get a welcome email notification.
-- Login with (email and password).
+- Signup with name ,email and password.
+  - After signing up ,the user 'll get a welcome email notification by NodeMailer.
+- Create tasks
+- Login with email and password.
 - Logout.
-  - Logout from one or all sessions.
-- get a Hash encryption of passwords and access management with JWT tokens.
-- get Restricted from accessing to CRUD operations based on JWT tokens.
+- Filter your tasks and mark them as complete ones or just the incomplete ones.
+-  Filter your tasks based on specifi order or by ascending or descending order.
+-  pagination for the tasks
+- Get, Update and Delete a specific task by id.
+- Get a Hash encryption of passwords and access management with JWT tokens.
+- Get Restricted from accessing to CRUD operations based on JWT tokens.
 - Get all account/profile information.
-- Update your account/profile.
-- Delete your account/profile.
-  - After deleting ,the user 'll get a cancelation email notification.
+- Update your account.
+- Delete your account.
+  - The user will get a cancelation email notification.
 - Upload/upate a profile picture.
 - Delete your profile picture.
-- Create tasks.
-- Filtering your tasks like this :
-  - You can get all of them or just the complete ones or just the incomplete ones.
-  - You can get them in a specific(asc/desc) order(by when the task was last created, or last updated)
-  - You can paginating tasks.
-- Get/Update/Delete a specific task by id.
 
-
-
-## Installation 
 
 Install my-project with npm
+
+
+## How to use
 
 ```bash
  git clone https://github.com/Amir380-A/Task-manager-api
@@ -40,17 +38,11 @@ Install my-project with npm
  npm install
 ```
 
-## How to use
-
 ```bash
  npm run start
  ````
-Or
-```
- npm run dev
-```
 
-To run this project, you will need to add the following environment variables to your .env file:
+To run this project, add the following environment variables to your .env file:
 
 `MONGODB_URL`
 
